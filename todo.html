@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List App</title>
+  <!-- CSS File Link -->
+  <link rel="stylesheet" href="todo.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Header -->
+    <header class="app-header">
+      <div>
+        <h1><i class="fa-solid fa-list-check icon-primary"></i> Workspace Tasks</h1>
+        <p>Manage your daily goals, priorities, and activities</p>
+      </div>
+      <div id="taskStats" class="badge-stats">0 / 0 Completed</div>
+    </header>
+
+    <!-- Add Task Form -->
+    <section class="form-section">
+      <form id="todoForm" class="todo-form">
+        <input 
+          type="text" 
+          id="taskInput" 
+          placeholder="Add a new task..." 
+          required 
+          class="input-field task-text-input"
+        />
+        
+        <select id="categorySelect" class="input-field select-input">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <select id="prioritySelect" class="input-field select-input">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-plus"></i> Add
+        </button>
+      </form>
+    </section>
+
+    <!-- Controls: Search & Filter -->
+    <section class="controls-section">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search tasks..." 
+          class="input-field search-input"
+        />
+      </div>
+
+      <div class="filter-actions">
+        <div class="filter-buttons">
+          <button id="filter-all" class="filter-btn active">All</button>
+          <button id="filter-active" class="filter-btn">Active</button>
+          <button id="filter-completed" class="filter-btn">Completed</button>
+        </div>
+        <button id="clearCompletedBtn" class="btn-text-danger">Clear Completed</button>
+      </div>
+    </section>
+
+    <!-- Task List Container -->
+    <ul id="taskList" class="task-list">
+      <!-- JavaScript dwara dynamic tasks yahan add honge -->
+    </ul>
+
+  </div>
+
+  <!-- JavaScript File Link -->
+  <script src="todo.js"></script>
+</body>
+</html>
