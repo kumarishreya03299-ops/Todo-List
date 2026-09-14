@@ -18,7 +18,7 @@ A simple and user-friendly Todo List web application.
 
 ## 📁 Project Files
 
-- `todo.html` – Main webpage
+- `index.html` – Main webpage
 - `todo.css` – Styling and design
 - `todo.js` – Todo List functionality
 
