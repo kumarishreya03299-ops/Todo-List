@@ -25,7 +25,7 @@ A simple and user-friendly Todo List web application.
 ## ▶️ How to Run
 
 1. Download or clone this repository.
-2. Open `todo.html` in a web browser.
+2. Open `index.html` in a web browser.
 3. Start adding your tasks.
 
 
